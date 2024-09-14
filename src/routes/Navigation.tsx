@@ -7,7 +7,6 @@ import {
 } from 'react-router-dom'
 
 import logo from '../assets/react.svg'
-import { LazyPage1, LazyPage2, LazyPage3 } from '../01-lazyload/pages'
 
 export const Navigation = () => {
   return (
@@ -18,37 +17,37 @@ export const Navigation = () => {
           <ul>
             <li>
               <NavLink
-                to="/lazy1"
+                to="/home"
                 className={({ isActive }) => (isActive ? 'nav-active' : '')}
               >
-                Lazy 1
+                Home
               </NavLink>
             </li>
             <li>
               <NavLink
-                to="/lazy2"
+                to="/about"
                 className={({ isActive }) => (isActive ? 'nav-active' : '')}
               >
-                Lazy 2
+                About
               </NavLink>
             </li>
             <li>
               <NavLink
-                to="/lazy3"
+                to="/users"
                 className={({ isActive }) => (isActive ? 'nav-active' : '')}
               >
-                Lazy 3
+                Users
               </NavLink>
             </li>
           </ul>
         </nav>
 
         <Routes>
-          <Route path="lazy1" element={<LazyPage1 />} />
-          <Route path="lazy2" element={<LazyPage2 />} />
-          <Route path="lazy3" element={<LazyPage3 />} />
+          <Route path="about" element={<h1>About Page</h1>} />
+          <Route path="users" element={<h1>Users Page</h1>} />
+          <Route path="/home" element={<h1>Home Page</h1>} />
 
-          <Route path="/*" element={<Navigate to="/lazy1" replace />} />
+          <Route path="/*" element={<Navigate to="/home" replace />} />
         </Routes>
       </div>
     </BrowserRouter>
