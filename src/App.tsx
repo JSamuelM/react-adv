@@ -1,7 +1,9 @@
+import { Navigation } from './routes/Navigation'
+
 function App() {
   return (
     <>
-      <h1>Hola Mundo</h1>
+      <Navigation />
     </>
   )
 }
