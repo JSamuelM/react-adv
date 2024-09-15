@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/01-lazyload/pages/lazypage1.tsx","./src/01-lazyload/pages/lazypage2.tsx","./src/01-lazyload/pages/lazypage3.tsx","./src/01-lazyload/pages/index.ts","./src/routes/navigation.tsx","./src/routes/routes.ts"],"version":"5.6.2"}
